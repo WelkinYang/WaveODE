@@ -36,6 +36,9 @@ python3 inferene.py --hparams config.yaml --checkpoint logdir/waveode/xxx.pth --
 ```
 python3 -u train_reflow.py -c config_reflow.yaml -l logdir -m waveode_2-rectified_flow
 ```
+## Todo
+
+- [ ] Upload demos of Waveode on open-resources speech corpus such as LJSpeech and VCTK
 
 ## Q&A
 
@@ -64,6 +67,7 @@ There are some relevant papers:
 [8] Conditional Flow Matching: Simulation-Free Dynamic Optimal Transport (Tong et al. 2023) [Paper](https://arxiv.org/abs/2302.00482)
 
 [9] Minimizing Trajectory Curvature of ODE-based Generative Models (Lee et all. 2023) [Paper](https://arxiv.org/abs/2301.12003)
+
 
 ### Why choose ODE-based model instead of SDE-based diffusion models or Denosing diffusion models?
 
