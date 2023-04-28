@@ -57,7 +57,7 @@ There are some relevant papers:
 
 [5] Stochastic Interpolants: A Unifying Framework for Flows and Diffusions (Albergo et al. 2023) [Paper](https://arxiv.org/abs/2303.08797)
 
-[6] Action Matching: Learning Stochastic Dynamics From Samples (Neklyudov et al. 2022) [Paper](https://arxiv.org/abs/2210.06662) [Code (https://github.com/necludov/jam)
+[6] Action Matching: Learning Stochastic Dynamics From Samples (Neklyudov et al. 2022) [Paper](https://arxiv.org/abs/2210.06662)
 
 [7] Riemannian Flow Matching on General Geometries (Chen et al. 2023) [Paper](https://arxiv.org/abs/2302.03660)
 
