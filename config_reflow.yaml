@@ -1,0 +1,46 @@
+seed: 1234
+num_gpus: 1
+
+num_workers: 6
+lang_mode: cmn_eng
+dataset_type: VocoderNoiseDataset
+collate_type: VocoderNoiseCollate
+feature_dirs: [testdata/train/mels/, testdata/generate/wavs, testdata/generate/noise]
+train_fileid_list_path: testdata/generate/train_fileid_list.scp
+valid_fileid_list_path: testdata/generate/test_fileid_list.scp
+
+sample_rate: 22050
+mel_dim: 80
+hop_size: 256
+win_size: 1024
+
+segment_len: 64
+init_type: gaussian
+noise_scale: 1.0
+use_ode_sampler: rk45
+ode_tol: 1.0e-5
+T: 1.0
+eps: 1.0e-3
+reflow_flag: True
+reflow_t_schedule: uniform
+t_max_value: 999
+sigma_var: 0.0
+n_res_layers: 30
+in_dim: 1
+res_dim: 128
+skip_dim: 128
+dilation_cycle: 10
+out_dim: 1
+diffusion_step_embed_in_dim: 128
+diffusion_step_embed_mid_dim: 512
+diffusion_step_embed_out_dim: 512
+
+epochs: 3000
+g_learning_rate: 2.0e-4
+d_learning_rate: 2.0e-4
+lr_decay: 0.999
+betas: [0.8, 0.99]
+batch_size: 2
+grad_clip_threshold: 1
+writer_interval: 1
+checkpoint_interval: 1
